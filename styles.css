@@ -1,0 +1,236 @@
+body {
+    margin: 0;
+    /* min-height: 100vh; */
+    background-color: #e8e2e6;
+    color: #a78f82;
+    .a{
+        background: url(images/backgnd1.png) center, no-repeat;
+        background-size: cover;
+    };
+    .j{
+        background: url(images/backgnd2.png) center, no-repeat;
+        background-size: cover;
+    };
+    /* font-family: Domine Regular, Bold, ; */
+    /* font-family: Roboto Regular, Light, Thin, Medium ; */
+}
+*,*:after,*:before {
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    font-family: "Domine Regular";
+}
+p,button {
+    font-family: "Roboto Thin";
+}
+.conteiner-btn {
+    margin-top: 10%;
+}
+button {
+    cursor: pointer;
+    margin-bottom: 1rem;
+    border: 0;
+    height: 3rem;
+    width: 12rem;
+}
+.section {
+    position: relative;
+    /* height: 100vh; */
+    padding: 2% 5%;
+}
+.image, .vector {
+    position: absolute;
+}
+/*Section 1*/
+.logo-top {
+    position: absolute;
+    left: 5%;
+    top: 7%;
+    text-align: center;
+    color: #a2887a;
+    line-height: 0.8;
+    p{margin: 0;}
+    .top {font-family: Sacramento;font-size: 2rem;}
+    .bottom{font-family: "Roboto Regular";font-size: 0.7rem;}
+}
+.nav-panel-list {
+    display: flex;
+    margin: auto;
+    justify-content: flex-end;
+    li{display: inline-block; margin: 3% 0 0 10%;
+        a{color: #9e8179; font-family: "Roboto Regular"; font-size: 1.5rem; text-decoration: none; transition: color 0.3s linear;}
+        :hover{color: #9e817980;}
+    }
+}
+#head1 {
+    margin-top: 17%;
+    font-size: 3rem;
+}
+#head2 {
+    font-family: "Roboto Thin";
+    font-size: 2.5rem;
+}
+#v1 {
+    top: 7%;
+    left: 0;
+}
+#im1 {
+    top: 20%;
+    right: 5%;
+}
+#v2 {
+    bottom: 7%;
+    right: 0;
+}
+.dark {
+    font-size: 2rem;
+    background-color: #9e8179;
+    color: #f9f8f7;
+}
+#head3 {
+    margin-top: 10%;
+    font-size: 2rem;
+    color: #9e8179;
+}
+#text1 {
+    width: 55%;
+    color: #9e8179;
+    font-size: 1.6rem;
+    text-align: justify;
+    line-height: 1.5rem;
+    span{font-family:"Roboto Medium"};
+}
+/*Section 2*/
+.container-top {
+    position: relative;
+    min-height: 480px;
+    background: url(images/image2.png) center, no-repeat;
+    background-size: cover;
+}
+.text-conteiner {
+    position: absolute;
+    right: 4%;
+    top: 15%;
+    width: 40%;
+    color: white;
+}
+#head4 {
+    font-size: 2.2rem;
+    text-align: right;
+}
+#text2 {
+    margin: 10% 0 15% 0;
+    font-size: 1.2rem;
+    text-align: justify;
+    line-height: 2rem;
+}
+.button-conteiner {
+    text-align: right;
+}
+.light {
+    font-size: 1.5rem;
+    background-color: white;
+    color: #9e8179;
+}
+/*Section 3*/
+.c {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5% 0 9% 0;
+}
+#im3 {
+    width: 50%;
+    text-align: center;
+}
+.text-content {
+    width: 50%;
+    color: #9e8179;
+}
+#head5 {
+    font-size: 3.2rem;
+    margin-top: 19%;
+    font-family: "Domine SemiBold";
+}
+#subhead5 {
+    font-size: 1.3rem;
+    font-family: "Roboto Light";
+}
+#text3 {
+    margin: 10% 15% 10% 0;
+    font-size: 1.3rem;
+    word-break: break-all;
+    text-align: justify;
+    span{font-family:"Roboto Medium"};
+}
+.social {
+    a{
+        display: inline-block;
+        text-decoration: none;
+        margin-right: 0.3rem;
+    }
+}
+.fa-brands {
+    width: 35px;
+}
+/*Section 4*/
+.d {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.comment {
+    position: relative;
+    width: 42%;
+    background-color: #9e8179;
+    color: white;
+    padding: 3%;
+    h2{
+        margin: 9% 0 11%;
+        font-size: 2.5rem;
+    }
+    p{
+        text-align: justify;
+        word-break: break-all;
+        line-height: 2rem;
+        font-size: 1.3rem;
+        span{font-family:"Roboto Regular";};
+    }
+    h3{
+        margin: 22% 0 4%;
+        font-size: 2rem;
+    }
+    a{
+        position: absolute;
+        bottom: 9%;
+        right: 8%;
+    }
+}
+.envelope {
+    width: 75px;
+}
+/*Section 5*/
+#im4 {
+    top: 17%;
+}
+.studios-list {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding: 11%;
+    font-size: 2.7rem;
+    font-family: "Domine Bold";
+    .stud{font-size: 2rem;font-family:"Roboto Light";margin: 0 0 4%;}
+}
+
+/* .art {
+    width: 200px;
+    height: 200px;
+    animation: tran 3s ease 1s infinite;
+}
+@keyframes tran {
+    0% {border-radius: 0%; scale: 1; background-color: blue;}
+    50% {border-radius: 50%;scale: 0.5;background-color: greenyellow;}
+    100% {border-radius: 0%;scale: 1;background-color: blue;}
+} */
