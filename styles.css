@@ -1,18 +1,15 @@
 body {
     margin: 0;
-    /* min-height: 100vh; */
     background-color: #e8e2e6;
     color: #a78f82;
     .a{
         background: url(images/backgnd1.png) center, no-repeat;
         background-size: cover;
     };
-    .j{
+    .contact{
         background: url(images/backgnd2.png) center, no-repeat;
         background-size: cover;
     };
-    /* font-family: Domine Regular, Bold, ; */
-    /* font-family: Roboto Regular, Light, Thin, Medium ; */
 }
 *,*:after,*:before {
     box-sizing: border-box;
@@ -36,12 +33,24 @@ button {
 }
 .section {
     position: relative;
-    /* height: 100vh; */
     padding: 2% 5%;
+}
+.double-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .image, .vector {
     position: absolute;
 }
+.text-content {
+    width: 50%;
+    color: #9e8179;
+}
+.img-content {
+    width: 50%;
+}
+
 /*Section 1*/
 .logo-top {
     position: absolute;
@@ -66,6 +75,7 @@ button {
 #head1 {
     margin-top: 17%;
     font-size: 3rem;
+    font-family: "Domine Regular";
 }
 #head2 {
     font-family: "Roboto Thin";
@@ -92,6 +102,7 @@ button {
     margin-top: 10%;
     font-size: 2rem;
     color: #9e8179;
+    font-family: "Domine Regular";
 }
 #text1 {
     width: 55%;
@@ -101,14 +112,29 @@ button {
     line-height: 1.5rem;
     span{font-family:"Roboto Medium"};
 }
+/*Button go-top*/
+.return {
+    z-index: 97;
+    position: fixed;
+    text-align: right;
+    bottom: 5%;
+    right: 5%;
+}
+.back {
+    border-radius: 50%;
+    width: 20%;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+.back:hover{opacity: 0.3;}
 /*Section 2*/
 .container-top {
     position: relative;
-    min-height: 480px;
+    min-height: 478px;
     background: url(images/image2.png) center, no-repeat;
     background-size: cover;
 }
-.text-conteiner {
+.text-conteiner-top {
     position: absolute;
     right: 4%;
     top: 15%;
@@ -118,6 +144,7 @@ button {
 #head4 {
     font-size: 2.2rem;
     text-align: right;
+    font-family: "Domine Regular";
 }
 #text2 {
     margin: 10% 0 15% 0;
@@ -125,7 +152,7 @@ button {
     text-align: justify;
     line-height: 2rem;
 }
-.button-conteiner {
+.button-conteiner-top {
     text-align: right;
 }
 .light {
@@ -134,19 +161,8 @@ button {
     color: #9e8179;
 }
 /*Section 3*/
-.c {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.teachers-1 {
     margin: 5% 0 9% 0;
-}
-#im3 {
-    width: 50%;
-    text-align: center;
-}
-.text-content {
-    width: 50%;
-    color: #9e8179;
 }
 #head5 {
     font-size: 3.2rem;
@@ -174,63 +190,259 @@ button {
 .fa-brands {
     width: 35px;
 }
-/*Section 4*/
-.d {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+#im3 {
+    text-align: right;
+    margin-right: 2%;
 }
+/*Section 4*/
 .comment {
     position: relative;
-    width: 42%;
+    width: 43%;
     background-color: #9e8179;
     color: white;
     padding: 3%;
-    h2{
-        margin: 9% 0 11%;
-        font-size: 2.5rem;
-    }
     p{
         text-align: justify;
         word-break: break-all;
         line-height: 2rem;
         font-size: 1.3rem;
         span{font-family:"Roboto Regular";};
-    }
-    h3{
-        margin: 22% 0 4%;
-        font-size: 2rem;
-    }
+    };
     a{
         position: absolute;
         bottom: 9%;
         right: 8%;
-    }
+    };
+}
+.comment-header{
+    margin: 9% 0 11%;
+    font-size: 2.5rem;
+    font-family: "Domine Regular";
+}
+.comment-bottom {
+    margin: 22% 0 4%;
+    font-size: 2rem;
+    font-family: "Domine Regular";
 }
 .envelope {
     width: 75px;
 }
 /*Section 5*/
+.studios-1 {
+    margin: 7% 0;
+}
 #im4 {
-    top: 17%;
+    text-align: left;
+    margin-left: 0.5%;
 }
 .studios-list {
     display: flex;
     flex-direction: column;
     text-align: right;
-    padding: 11%;
+    padding: 4% 20%;
     font-size: 2.7rem;
-    font-family: "Domine Bold";
-    .stud{font-size: 2rem;font-family:"Roboto Light";margin: 0 0 4%;}
+    font-family: "Domine SemiBold";
+    .stud{font-size: 2rem;font-family:"Roboto Light";margin: 1% 0 9%;}
 }
-
-/* .art {
-    width: 200px;
-    height: 200px;
-    animation: tran 3s ease 1s infinite;
+#v3 {
+    left: 0;
+    top: 83%;
+    z-index: 1;
 }
-@keyframes tran {
-    0% {border-radius: 0%; scale: 1; background-color: blue;}
-    50% {border-radius: 50%;scale: 0.5;background-color: greenyellow;}
-    100% {border-radius: 0%;scale: 1;background-color: blue;}
-} */
+#v4 {
+    right: 0;
+    top: 65%;
+}
+/*Section 6*/
+.container-bottom {
+    margin: 4% 0;
+    position: relative;
+    min-height: 478px;
+    background: url(images/image5.png) center, no-repeat;
+    background-size: cover;
+}
+.text-conteiner-bottom {
+    position: absolute;
+    left: 3%;
+    top: 13%;
+    width: 44%;
+    color: white;
+}
+#head6 {
+    font-size: 2.2rem;
+    text-align: left;
+    font-family: "Domine Regular";
+}
+#text4 {
+    margin: 12% 0 11% 0;
+    font-size: 1.3rem;
+    text-align: justify;
+    line-height: 2rem;
+}
+.button-conteiner-bottom {
+    text-align: left;
+}
+/*Section 7*/
+.courses-1 {
+    margin: 0.5% 0;
+}
+.courses-1-text {
+    text-align: right;
+    padding: 2% 11% 0 0;
+}
+#im5 {
+    margin-left: 4%;
+}
+#head7 {
+    font-size: 3rem;
+    font-family: "Domine SemiBold";
+}
+#subhead7 {
+    font-size: 1.3rem;
+    font-family: "Roboto Light";
+}
+.courses-list {
+    margin: 16% 0;
+    button {margin-bottom: 8%;}
+}
+#v5 {
+    left: 0;
+    top: -15%;
+}
+#v6 {
+    right: 0;
+    top: 48%;
+}
+/*Section 8*/
+#v7 {
+    z-index: -1;
+    right: 36%;
+    top: 45%;
+}
+/*Section 9*/
+.about-1 {
+    margin: 9.5% 0 0 0;
+    padding-bottom: 0;
+}
+#head8 {
+    font-size: 3.2rem;
+    margin-top: 2%;
+    font-family: "Domine SemiBold";
+}
+#subhead8 {
+    font-size: 1.3rem;
+    font-family: "Roboto Light";
+}
+#text5 {
+    margin: 10% 0 12% 0;
+    font-size: 1.3rem;
+    word-break: break-all;
+    text-align: justify;
+    span{font-family:"Roboto Medium"};
+}
+#im6 {
+    text-align: right;
+    margin-right: 1%;
+}
+/*Section 10*/
+.about-2 {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+#v8 {
+    left: 22%;
+    top: -30%;
+    z-index: -1;
+}
+#v9 {
+    right: 0;
+    top: -36%;
+}
+#head9 {
+    text-align: center;
+    font-size: 6rem;
+    margin-top: 59%;
+    font-family: "Sacramento Regular";
+    line-height: 4rem;
+}
+#subhead9 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: "Roboto Regular";
+}
+/*Section 11*/
+.contact {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+}
+.bottom-conteiner {
+    .text-content {margin: 0 0 0 1%;};
+    
+}
+#head10 {
+    font-size: 4rem;
+    font-family: "Domine Regular";
+}
+#contacts {
+    display: flex;
+    flex-direction: row;
+    margin-top: 16%;
+}
+#icons {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+    text-align: center;
+}
+.cont-icon {
+    height: 40px;
+    margin: 45% 0;
+}
+#icons-ref {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    a{color: #9e8179;
+        font-family: "Roboto Regular";
+        font-size: 1.5rem;
+        text-decoration: none;
+        transition: color 0.3s linear;
+    }
+    :hover{color: #9e817980;}
+}
+#im8 {
+    margin: 1% 1% 0 0;
+    text-align: right;
+}
+#v10 {
+    left: 0;
+    top: 38%;
+}
+.footer{
+    position: relative;
+    margin: 8% 0 0 1%;
+}
+#so-foot {
+    position: absolute;
+}
+.fa-brands-footer {
+    width: 25px;
+}
+.nav-panel-list-foot {
+    display: flex;
+    margin: auto;
+    justify-content: flex-end;
+    padding: 0;
+    li{display: inline-block; margin: 0 0 0 10.5%;
+        a{color: #9e8179; font-family: "Roboto Regular"; font-size: 1.5rem; text-decoration: none; transition: color 0.3s linear;}
+        :hover{color: #9e817980;}
+    }
+    li:first-child{
+        margin:0;
+    }
+}
+.designed {
+    margin-top: 5%;
+    text-align: center;
+}
