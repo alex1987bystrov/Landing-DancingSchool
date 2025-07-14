@@ -1,0 +1,7 @@
+![Иллюстрация к проекту](https://github.com/alex1987bystrov/imgs/raw/main/screenshotsOfDancingSchool/dancing%200.0.jpg)
+![Иллюстрация к проекту](https://github.com/alex1987bystrov/imgs/raw/main/screenshotsOfDancingSchool/dancing%200.1.png)
+![Иллюстрация к проекту](https://github.com/alex1987bystrov/imgs/raw/main/screenshotsOfDancingSchool/dancing%200.2.png)
+![Иллюстрация к проекту](https://github.com/alex1987bystrov/imgs/raw/main/screenshotsOfDancingSchool/dancing%200.3.png)
+![Иллюстрация к проекту](https://github.com/alex1987bystrov/imgs/raw/main/screenshotsOfDancingSchool/dancing%200.4.png)
+![Иллюстрация к проекту](https://github.com/alex1987bystrov/imgs/raw/main/screenshotsOfDancingSchool/dancing%200.5.png)
+![Иллюстрация к проекту](https://github.com/alex1987bystrov/imgs/raw/main/screenshotsOfDancingSchool/dancing%200.6.png)
